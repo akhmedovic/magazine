@@ -3,21 +3,32 @@
 body {
 	font: 12px/1.4 Arial, Verdana, Tahoma, san-serif;
 	color: #5e5e5e;
+	background: url(../images/wrapper_bg.png);
 }
 
 a {
 	text-decoration: none;
+	color: #5e5e5e;
 }
+
+a:hover {
+	text-decoration: underline;
+}
+
+h2 {
+	font-size: 18px;
+	margin-bottom: 12px;
+} 
+
+p {
+	margin: 14px 0 17px 0;
+}
+
 
 .clear {
 	clear: both;
 }
 
-#header {
-	min-width: 960px;
-	max-width: 1200px;
-	margin: 0 auto;
-}
 #logo {
 	width: 241px;
 	height: 46px;
@@ -35,10 +46,11 @@ a {
 #top-menu {
 	min-width: 960px;
 	background: url(../images/top_menu_bg.jpg) repeat-x;
+
 	height: 49px;
 }
 
-#inner-menu {
+#inner-menu, #wrapper, #middel-content, #header, #bottom-content {
 	min-width: 960px;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -58,4 +70,220 @@ a {
 
 #inner-menu a:hover {
 	background: url(../images/menu_hover.png);
+	text-decoration: none;
+}
+
+#sidebar {
+	width: 300px;
+	float: right;
+	padding-right: 10px;
+}
+
+#content {
+	margin-right: 300px;
+	padding: 27px 58px 0 10px;
+}
+
+.post {
+	border-bottom: 1px dashed #e4e4e4;
+	overflow: hidden;
+	margin-bottom: 14px;
+}
+
+.thumbnail {
+	float: left;
+	border: 3px solid #e0e0e0;
+}
+
+.post-content {
+	margin-left:  180px;
+}
+
+
+.posted-by, .post-categories {
+	font-family: Georgia, "Times New Roman", Roman;
+	color: #c3c3c3;
+	margin: 0 0 7px 0;
+}
+
+#sidebar h3 {
+	color: #999999;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: url(../images/search_h3_bg.png) repeat-x 0 5px;
+	padding-left: 26px;
+	margin-top: 28px;
+	margin-bottom: 27px;
+}
+
+#subcribe-form h3 span, #sidebar h3 span, #search-form h3 span {
+	background: url(../images/wrapper_bg.png);
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.text-field input {
+	background: none;
+	border: none;
+	color: #b1b1b1;
+	font-size: 12px;
+	padding: 7px 7px;
+	
+}
+
+.text-field {
+	width: 140px;
+	height: 29px;
+	background: url(../images/input_bg.png);
+	float: left;
+}
+
+.first-row, .second-row {
+	width: 270px;
+	margin: 0 auto;s
+}
+
+.second-row {
+	margin-top: 14px;
+}
+
+.left {
+	float: left;
+	display: block;
+}
+
+.right {
+	float: right;
+	display: block;
+}
+
+#categories ul {
+	width: 140px;
+}
+
+#categories ul li {
+	border-top: 1px dashed #e3e3e3;
+	padding: 11px 0;
+}
+
+#categories ul li:first-child {
+	border: none;
+}
+
+#categories ul li a {
+	font-weight: bold;
+}
+
+#categories h3 {
+	margin-bottom: 14px;
+}
+
+#pagination {
+	margin: 34px 0;
+}
+
+#pagination ul {
+	overflow: hidden;
+}
+
+#pagination ul li {
+	margin-right: 2px;
+	float: left;
+}
+
+#pagination ul li a {
+	padding: 10px 15px 7px 15px;
+	border-bottom: 3px solid #cccccc;
+	display: block;
+}
+
+#pagination ul li a:hover {
+	text-decoration: none;
+	background: #e7e7e7;
+}
+
+#pagination .current, #pagination .current:hover {
+	background: #333333;
+	color: #ffffff;
+	border: none;
+	padding-bottom: 10px;
+}
+
+#pagination .next {
+	
+}
+
+#footer {
+	min-width: 960px;
+}
+
+#footer-top {
+	height: 19px;
+	background: url(../images/footer_top_bg.jpg) repeat-x;
+}
+
+#footer-middel {
+	background: url(../images/footer_bg.png );
+}
+
+.footer-box {
+	padding-top: 55px;
+	width: 30%;
+	margin-right: 5%;
+	float: left;
+}
+
+.footer-box ul li a {
+	color: #e0e0e0;
+}
+
+#archives {
+	margin-right: 0;
+}
+
+#footer-middel {
+	color: #e0e0e0;
+	padding-bottom: 55px;
+}
+
+#magazine {
+	background: url(../images/footer_magazine_bg.png) no-repeat;
+	padding-top: 55px;
+}
+
+#recent-box ul li, #archives-box ul li {
+	padding: 15px 0;
+	background: url(../images/footer_border.png) repeat-x left bottom;
+}
+
+#recent-box h3, #archives-box h3 {
+	width: 220px;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ffffff;
+	background: url(../images/footer_h3_bg.png) repeat-x 0 5px;
+}
+
+#recent-box h3 span, #archives-box h3 span {
+	background: url(../images/footer_bg.png );
+	padding-right: 10px;
+}
+
+#middel-content, #bottom-content {
+	padding: 0 10px;
+}
+
+#footer-bottom {
+	background: url(../images/footer_bottom_bg.jpg) repeat-x;
+}
+
+ #bottom-content {
+	padding: 0 10px;
+	color: #e0e0e0
+}
+
+#bottom-content a {
+	color: #8f8f8f;
 }
